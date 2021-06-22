@@ -1,15 +1,13 @@
-package com.yjie.junjunmusic.base
+package com.yjie.architecture.ui
 
-import android.app.Application
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStore
 import com.yjie.architecture.utils.Utils
-import com.yjie.junjunmusic.App
-import com.yjie.junjunmusic.utils.ColorUtils
-import com.yjie.junjunmusic.utils.StatusUtils
+import com.yjie.architecture.utils.ColorUtils
+import com.yjie.architecture.utils.StatusUtils
 
 /**
  * Copyright (c) 2021 Samsung Electronics Co., Ltd. All Rights Reserved.

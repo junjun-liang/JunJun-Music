@@ -1,4 +1,4 @@
-package com.yjie.junjunmusic.utils;
+package com.yjie.architecture.utils;
 
 import android.app.Activity;
 import android.content.Context;

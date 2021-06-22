@@ -1,4 +1,4 @@
-package com.yjie.junjunmusic.utils;
+package com.yjie.architecture.utils;
 
 import android.graphics.Color;
 import android.text.TextUtils;

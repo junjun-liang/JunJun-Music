@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kunminx.archi:domain:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da6018bbf7ba393134fdb1b6a4e98613/jetified-domain-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da6018bbf7ba393134fdb1b6a4e98613/jetified-domain-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da6018bbf7ba393134fdb1b6a4e98613/jetified-domain-1.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kunminx.archi/domain/1.1.0/46a25a46f9f5365a934d8a042ed0537abf39f48/domain-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kunminx.archi/domain/1.1.0/587b5e79f8f355dc12ccd1c21ace0b8c37a23c72/domain-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
