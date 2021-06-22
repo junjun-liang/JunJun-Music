@@ -1,4 +1,4 @@
-package com.yjie.architecture.ui
+package com.yjie.architecture.ui.page
 
 import android.app.Activity
 import android.app.Application
