@@ -39,10 +39,21 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-common-java8:2.3.0"
     implementation "androidx.navigation:navigation-runtime:2.3.4"
 
+    //viewPager2
+    implementation "androidx.viewpager2:viewpager2:1.1.0-alpha01"
+
+    //smart fresh
+    implementation "com.scwang.smartrefresh:SmartRefreshLayout:1.1.2"
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+
     //MMVM
     implementation "com.kunminx.archi:unpeek-livedata:4.4.1-beta1"
     implementation "com.kunminx.archi:smooth-navigation:3.3.2-beta5"
     implementation "com.kunminx.archi:strict-databinding:3.6.2-beta1"
     implementation "com.kunminx.archi:domain:1.1.0"
 
+    //glide
+    implementation "com.github.bumptech.glide:glide:4.12.0"
+    implementation "jp.wasabeef:glide-transformations:4.1.0"
 }

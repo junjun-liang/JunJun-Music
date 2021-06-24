@@ -1,9 +1,10 @@
-package com.yjie.architecture.utils
+package com.yjie.architecture.common
 
 import android.content.Context
 import android.text.TextUtils
 import android.widget.Toast
 import androidx.annotation.StringRes
+import com.yjie.architecture.utils.Utils
 
 /**
  * des Toast工具类
