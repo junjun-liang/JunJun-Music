@@ -190,6 +190,36 @@ class PlayList private constructor() {
     }
 
     /**
+     * 下一个音频
+     */
+    fun nextAudio(): AudioBean? {
+        if (!isListEmpty(currentPlayList)) {
+            when (playMode) {
+                //顺序
+                PlayMode.ORDER_PLAY_MODE -> {
+                    currentIndex = if (currentIndex < currentPlayList.size - 1) {
+                        currentIndex + 1
+                    } else {
+                        0
+                    }
+                }
+                //单曲(不做处理)
+                PlayMode.SINGLE_PLAY_MODE -> {
+                }
+                //随机
+                PlayMode.RANDOM_PLAY_MODE -> {
+                    currentIndex = getRandom(0, currentPlayList.size - 1)
+                }
+            }
+            currentAudio = currentPlayList[currentIndex]
+        } else {
+            //当前播放列表为空将丹铅播放置为null
+            currentAudio = null
+        }
+        return currentAudio
+    }
+
+    /**
      * 获取当前播放模式
      */
     fun getCurrentPlayMode(): Int {
