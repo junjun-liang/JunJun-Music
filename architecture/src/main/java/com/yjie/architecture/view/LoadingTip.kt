@@ -2,6 +2,7 @@ package com.yjie.architecture.view
 
 import android.content.Context
 import android.util.AttributeSet
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
@@ -28,10 +29,10 @@ class LoadingTip : RelativeLayout {
     }
 
     private fun initView(context: Context) {
-        View.inflate(context, R.layout.loading_tip, this)
-        llEmpty = findViewById(R.id.llEmpty)
-        indicatorView = findViewById(R.id.indicatorView)
-        llInternetError = findViewById(R.id.llInternetError)
+        val view = LayoutInflater.from(context).inflate(R.layout.loading_tip, this, true)
+        llEmpty = view.findViewById(R.id.llEmpty)
+        indicatorView = view.findViewById(R.id.indicatorView)
+        llInternetError = view.findViewById(R.id.llInternetError)
         visibility = View.GONE
     }
 

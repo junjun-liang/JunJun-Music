@@ -11,7 +11,7 @@ abstract class BaseLazyLoadingFragment : BaseLazyFragment() {
     override fun onAttach(context: Context) {
         super.onAttach(context)
         if (context is BaseLoadingActivity) {
-            loadingTip = context.loadingTip
+//            loadingTip = context.loadingTip
         }
     }
 

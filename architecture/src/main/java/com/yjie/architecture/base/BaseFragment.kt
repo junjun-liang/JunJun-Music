@@ -11,7 +11,7 @@ import androidx.navigation.NavController
 import com.kunminx.architecture.ui.page.DataBindingConfig
 import com.yjie.architecture.nav.NavHostFragment
 
-abstract class BaseVmFragment : Fragment() {
+abstract class BaseFragment : Fragment() {
 
     lateinit var mContext: Context
     lateinit var mActivity: AppCompatActivity

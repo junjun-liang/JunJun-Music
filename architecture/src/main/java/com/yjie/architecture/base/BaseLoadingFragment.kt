@@ -5,14 +5,14 @@ import android.view.ViewGroup
 import com.yjie.architecture.utils.StatusUtils
 import com.yjie.architecture.view.LoadingTip
 
-abstract class BaseLoadingFragment: BaseVmFragment() {
+abstract class BaseLoadingFragment: BaseFragment() {
 
     protected var loadingTip: LoadingTip? = null
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
         if (context is BaseLoadingActivity) {
-            loadingTip = context.loadingTip
+//            loadingTip = context.loadingTip
         }
     }
 

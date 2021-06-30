@@ -1,6 +1,7 @@
 package com.yjie.architecture.base
 
 import android.os.Bundle
+import androidx.annotation.CallSuper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -17,10 +18,11 @@ import com.yjie.architecture.utils.StatusUtils
  *     version: 1.0
  * </pre>
  */
-abstract class BaseVmActivity : AppCompatActivity() {
+abstract class BaseActivity : AppCompatActivity() {
 
     private var mActivityProvider: ViewModelProvider? = null
 
+    @CallSuper
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         getLayoutId()?.let { setContentView(it) }

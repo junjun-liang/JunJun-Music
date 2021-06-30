@@ -2,7 +2,7 @@ package com.yjie.architecture.base
 
 import android.os.Bundle
 
-abstract class BaseLazyFragment: BaseVmFragment() {
+abstract class BaseLazyFragment: BaseFragment() {
 
     private var isLoaded = false
 
