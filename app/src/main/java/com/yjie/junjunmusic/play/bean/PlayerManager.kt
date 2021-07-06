@@ -11,7 +11,6 @@ import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import java.util.concurrent.TimeUnit
 import io.reactivex.disposables.Disposable
-import java.util.*
 
 /**
  * des 音频管理
@@ -21,11 +20,11 @@ import java.util.*
  */
 
 
-class PlayManager private constructor() : IPlayerStatus {
+class PlayerManager private constructor() : IPlayerStatus {
 
     companion object {
-        val instance: PlayManager by lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED) {
-            PlayManager()
+        val INSTANCE: PlayerManager by lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED) {
+            PlayerManager()
         }
 
         //播放器状态,当前共4种,可在此处随时扩展
