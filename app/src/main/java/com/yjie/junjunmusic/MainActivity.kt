@@ -22,5 +22,5 @@ class MainActivity : BaseLoadingActivity() {
         super.onCreate(savedInstanceState)
     }
 
-    override fun getLayoutId(): Int? = R.layout.activity_main
+    override fun getLayoutId(): Int = R.layout.activity_main
 }

@@ -2,14 +2,18 @@ package com.yjie.architecture.base
 
 import android.content.Context
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
-import com.kunminx.architecture.ui.page.DataBindingConfig
 import com.yjie.architecture.nav.NavHostFragment
+import com.yjie.architecture.ui.page.DataBindingConfig
 
 abstract class BaseFragment : Fragment() {
 
@@ -28,7 +32,34 @@ abstract class BaseFragment : Fragment() {
         mActivity = context as AppCompatActivity
         // 必须要在Activity与Fragment绑定后，因为如果Fragment可能获取的是Activity中ViewModel
         // 必须在onCreateView之前初始化viewModel，因为onCreateView中需要通过ViewModel与DataBinding绑定
+        initViewModel()
+    }
 
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        getLayoutId()?.let {
+            setStatusColor()
+            setSystemInvadeBlack()
+            //获取ViewDataBinding
+            val binding: ViewDataBinding = DataBindingUtil.inflate(inflater, it, container, false)
+            //将ViewDataBinding生命周期与Fragment绑定
+            binding.lifecycleOwner = viewLifecycleOwner
+            dataBindingConfig = getDataBindingConfig()
+            dataBindingConfig?.apply {
+                val bindingParams = bindingParams
+                // 将bindingParams逐个加入到ViewDataBinding中的Variable
+                // 这一步很重要,否则xml中拿不到variable中内容
+                for (i in 0 until bindingParams.size()) {
+                    binding.setVariable(bindingParams.keyAt(i), bindingParams.valueAt(i))
+                }
+            }
+            viewDataBinding = binding
+            return binding.root
+        }
+        return super.onCreateView(inflater, container, savedInstanceState)
     }
 
     /**

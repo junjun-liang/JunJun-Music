@@ -1,4 +1,4 @@
-package com.yjie.architecture.base;
+package com.yjie.architecture.ui.page;
 
 import android.util.SparseArray;
 

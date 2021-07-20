@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 一级主色调-->
+    <attr name="theme_color_1" format="color" />
+    <!-- 二级主色调-->
+    <attr name="theme_color_2" format="color" />
+    <!-- 三级主色调-->
+    <attr name="theme_color_3" format="color" />
+
+    <!-- 点击背景波纹-->
+    <attr name="ripple_gray" format="color" />
+
+    <attr name="main_bg_1" format="color"/>
+    <attr name="main_bg_2" format="color"/>
+    <attr name="main_bg_3" format="color"/>
+
+    <attr name="float_bg" format="color" />
+
+    <attr name="division_line" format="color" />
+</resources>

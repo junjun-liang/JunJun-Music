@@ -5,6 +5,23 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="main_bg_1">#ffffff</item>
+        <item name="main_bg_2">#EFEFEF</item>
+        <item name="main_bg_3">#CACACA</item>
+
+        <item name="theme_color_1">#333333</item>
+        <item name="theme_color_2">#666666</item>
+        <item name="theme_color_3">#999999</item>
+
+        <item name="ripple_gray">#D1D1D1</item>
+
+        <item name="float_bg">#F2FFFFFF</item>
+
+        <item name="division_line">#EDEDED</item>
+
+        <item name="android:navigationBarColor">#ffffff</item>
+
     </style>
 
 </resources>

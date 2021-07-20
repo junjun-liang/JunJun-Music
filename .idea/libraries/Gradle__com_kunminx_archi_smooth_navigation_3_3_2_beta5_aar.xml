@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.kunminx.archi:smooth-navigation:3.3.2-beta5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5bd11149f304a3bd7495659110b20b7f/jetified-smooth-navigation-3.3.2-beta5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5bd11149f304a3bd7495659110b20b7f/jetified-smooth-navigation-3.3.2-beta5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5bd11149f304a3bd7495659110b20b7f/jetified-smooth-navigation-3.3.2-beta5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30bfc9d9a78c55fcfcdf72c64f5fecd7/jetified-smooth-navigation-3.3.2-beta5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30bfc9d9a78c55fcfcdf72c64f5fecd7/jetified-smooth-navigation-3.3.2-beta5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30bfc9d9a78c55fcfcdf72c64f5fecd7/jetified-smooth-navigation-3.3.2-beta5/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kunminx.archi/smooth-navigation/3.3.2-beta5/d93469c98f7aa6df2ae4f63fb4ae9fcee543a7ed/smooth-navigation-3.3.2-beta5-javadoc.jar!/" />

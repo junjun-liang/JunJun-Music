@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.kunminx.archi:domain:1.1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da6018bbf7ba393134fdb1b6a4e98613/jetified-domain-1.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da6018bbf7ba393134fdb1b6a4e98613/jetified-domain-1.1.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da6018bbf7ba393134fdb1b6a4e98613/jetified-domain-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8f9bf0496b6231cadf27fb88ab9bf2e/jetified-domain-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8f9bf0496b6231cadf27fb88ab9bf2e/jetified-domain-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8f9bf0496b6231cadf27fb88ab9bf2e/jetified-domain-1.1.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kunminx.archi/domain/1.1.0/46a25a46f9f5365a934d8a042ed0537abf39f48/domain-1.1.0-javadoc.jar!/" />

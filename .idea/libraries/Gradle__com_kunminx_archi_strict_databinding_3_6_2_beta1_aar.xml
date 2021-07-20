@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.kunminx.archi:strict-databinding:3.6.2-beta1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d1064dc75d0999ec7e4ecdc38ccff01/jetified-strict-databinding-3.6.2-beta1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d1064dc75d0999ec7e4ecdc38ccff01/jetified-strict-databinding-3.6.2-beta1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d1064dc75d0999ec7e4ecdc38ccff01/jetified-strict-databinding-3.6.2-beta1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f4f1b0913e9b08bd21386debee1ddb21/jetified-strict-databinding-3.6.2-beta1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f4f1b0913e9b08bd21386debee1ddb21/jetified-strict-databinding-3.6.2-beta1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f4f1b0913e9b08bd21386debee1ddb21/jetified-strict-databinding-3.6.2-beta1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kunminx.archi/strict-databinding/3.6.2-beta1/9579e21a380b23af34121685c6ffc5195daba268/strict-databinding-3.6.2-beta1-javadoc.jar!/" />

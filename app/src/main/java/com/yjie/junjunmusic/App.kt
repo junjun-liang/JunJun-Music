@@ -14,7 +14,6 @@ open class App : BaseApp() {
     override fun attachBaseContext(base: Context?) {
         super.attachBaseContext(base)
         Utils.init(this)
-
     }
 
     override fun onCreate() {
