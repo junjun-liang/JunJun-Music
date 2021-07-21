@@ -62,6 +62,13 @@ abstract class BaseFragment : Fragment() {
         return super.onCreateView(inflater, container, savedInstanceState)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        init(savedInstanceState)
+        //observe一定要在初始化最后，因为observe会收到黏性事件，随后对ui做处理
+        observe()
+        onClick()
+    }
+
     /**
      * 通过activity获取viewModel，跟随activity生命周期
      */
@@ -143,7 +150,7 @@ abstract class BaseFragment : Fragment() {
     /**
      * 初始化入口
      */
-    abstract fun init(savedInstanceState: Bundle)
+    abstract fun init(savedInstanceState: Bundle?)
 
     /**
      * 获取layout布局

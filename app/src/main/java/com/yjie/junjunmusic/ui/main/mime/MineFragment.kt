@@ -10,7 +10,7 @@ import com.yjie.junjunmusic.BR
 class MineFragment:BaseFragment() {
     private var mineViewModel: MineViewModel? = null
 
-    override fun init(savedInstanceState: Bundle) {
+    override fun init(savedInstanceState: Bundle?) {
     }
 
     override fun getLayoutId(): Int? = R.layout.fragment_mine

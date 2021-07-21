@@ -14,7 +14,7 @@ abstract class BaseLazyFragment: BaseFragment() {
         }
     }
 
-    override fun init(savedInstanceState: Bundle) {
+    override fun init(savedInstanceState: Bundle?) {
 
     }
 

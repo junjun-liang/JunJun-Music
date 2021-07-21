@@ -38,7 +38,7 @@ class MainFragment : BaseFragment() {
         }
     }
 
-    override fun init(savedInstanceState: Bundle) {
+    override fun init(savedInstanceState: Bundle?) {
         vpHome.initFragment(childFragmentManager, fragments).run {
             offscreenPageLimit = fragments.size
         }

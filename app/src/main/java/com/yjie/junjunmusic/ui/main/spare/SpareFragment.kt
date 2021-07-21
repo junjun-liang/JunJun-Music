@@ -11,7 +11,7 @@ import com.yjie.junjunmusic.BR
 class SpareFragment:BaseFragment() {
     private var spareViewModel : SpareViewModel? = null
 
-    override fun init(savedInstanceState: Bundle) {
+    override fun init(savedInstanceState: Bundle?) {
 
     }
 

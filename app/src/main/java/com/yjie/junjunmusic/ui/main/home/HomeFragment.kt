@@ -13,7 +13,7 @@ class HomeFragment : BaseFragment(){
 
     private var homeViewModel: HomeViewModel? = null
 
-    override fun init(savedInstanceState: Bundle) {
+    override fun init(savedInstanceState: Bundle?) {
     }
 
     override fun initViewModel() {

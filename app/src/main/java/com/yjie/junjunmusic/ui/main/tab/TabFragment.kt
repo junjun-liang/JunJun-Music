@@ -10,7 +10,7 @@ import com.yjie.junjunmusic.BR
 class TabFragment : BaseFragment() {
     private var tabViewModel: TabViewModel? = null
 
-    override fun init(savedInstanceState: Bundle) {
+    override fun init(savedInstanceState: Bundle?) {
     }
 
     override fun getLayoutId(): Int? = R.layout.fragment_tab

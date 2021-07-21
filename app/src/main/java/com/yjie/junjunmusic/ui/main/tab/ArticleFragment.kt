@@ -10,7 +10,7 @@ import com.yjie.junjunmusic.BR
 class ArticleFragment : BaseFragment() {
     private var articleViewModel: ArticleViewModel? = null
 
-    override fun init(savedInstanceState: Bundle) {
+    override fun init(savedInstanceState: Bundle?) {
 
     }
 
