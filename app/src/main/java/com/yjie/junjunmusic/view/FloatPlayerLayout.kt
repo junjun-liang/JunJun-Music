@@ -22,7 +22,14 @@ import java.util.jar.Attributes
  * 这个motionEvent产生后，，就会传递给view的层级，MotionEvent在view中层级传递过程
  * 就是点击事件的分发。
  * 2：事件首先传递给当前activity，这会调用activity的dispatchTouchEvent()的方法，具体是由
- * phoneWindow来完成，phoneWindow把事件给decorView, decorView将事件给根ViewGroup
+ * phoneWindow来完成，phoneWindow把事件给decorView, decorView将事件给根ViewGroup，即顶层
+ * viewGroup。
+ * 一般在事件传递只考虑viewGroup的onInterceptTouchEvent方法，因为一般情况下我们不会重写
+ * dispatchTouchEvent方法。对于根viewGroup，点击事件首先传递给它的dispatchTouchEvent()方法
+ * 如果viewGroup的onInterceptTouchEvent方法返回true，表示它拦截这个事件。这个事件就交给它的
+ * onTouchEvent()方法处理。如果onInterceptTouchEvent方法返回false,它表示不拦截这个事件，则这个事件
+ * 会交给它的子元素的dispatchTouchEvent()方法处理，如果反复下去，如果传递给底层的view，view是没有
+ * 子view的，就会调用view的dispatchTouchEvent()方法，一般情况下最终会调用view的onTouchEvent()方法
  */
 
 class FloatPlayerLayout : LinearLayout {

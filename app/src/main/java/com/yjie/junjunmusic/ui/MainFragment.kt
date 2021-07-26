@@ -83,5 +83,8 @@ class MainFragment : BaseFragment() {
         floatLayout.playClick {
             PlayerManager.INSTANCE.controlPlay()
         }
+        floatLayout.rootClick {
+
+        }
     }
 }

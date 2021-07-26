@@ -103,22 +103,59 @@ class PlayerManager private constructor() : IPlayerStatus {
     @RequiresApi(Build.VERSION_CODES.R)
     fun controlPlay() {
         if (playList.getCurrentAudio() == null) {
-
+            start()
         } else {
+            //对应场景3
             if (playerHelper.isPlaying()) {
-
+                pause()
+            }
+            //对应场景2
+            else {
+                resume()
             }
         }
     }
 
     /**
+     * 第一次进入,播放器未被初始化,默认模仿第一个
+     */
+    @RequiresApi(Build.VERSION_CODES.R)
+    private fun start() {
+        play(playList.startAudio())
+    }
+
+    /**
+     * 从播放切换为暂停
+     */
+    private fun pause() {
+        playStatus = PAUSE
+        playerHelper.pause()
+        sendPlayStatusToObserver()
+    }
+
+    /**
+     * 从暂停切换为播放
+     */
+    private fun resume() {
+        playStatus = RESUME
+        playerHelper.resume()
+        sendPlayStatusToObserver()
+    }
+
+    /**
      * 播放一个新的音频
      */
+    @RequiresApi(Build.VERSION_CODES.R)
     fun play(audioBean: AudioBean?) {
         if (audioBean == null) {
             playerHelper.reset()
+            sendResetToObserver()
         } else {
-
+            playStatus = START
+            playList.setCurrentAudio(audioBean)
+            audioBean.path?.let { playerHelper.play(it) }
+            sendAudioToObserver(audioBean)
+            sendPlayStatusToObserver()
         }
     }
 
@@ -202,6 +239,13 @@ class PlayerManager private constructor() : IPlayerStatus {
      */
     private fun sendResetToObserver() {
         playLiveData.resetLiveData.value = 0
+    }
+
+    /**
+     * 给观察者发送播放状态
+     */
+    private fun sendPlayStatusToObserver() {
+        playLiveData.playStatusLiveData.value = playStatus
     }
 
     override fun onBufferingUpdate(present: Int) {
