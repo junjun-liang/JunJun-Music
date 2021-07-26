@@ -1,7 +1,9 @@
 package com.yjie.junjunmusic.ui
 
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import com.yjie.architecture.base.BaseFragment
 import com.yjie.architecture.common.doSelected
@@ -10,6 +12,7 @@ import com.yjie.architecture.ui.page.DataBindingConfig
 import com.yjie.junjunmusic.BR
 import com.yjie.junjunmusic.PlayViewModel
 import com.yjie.junjunmusic.R
+import com.yjie.junjunmusic.play.bean.PlayerManager
 import com.yjie.junjunmusic.ui.main.home.HomeFragment
 import com.yjie.junjunmusic.ui.main.mime.MineFragment
 import com.yjie.junjunmusic.ui.main.spare.SpareFragment
@@ -73,5 +76,12 @@ class MainFragment : BaseFragment() {
     override fun getDataBindingConfig(): DataBindingConfig? {
         return DataBindingConfig(R.layout.fragment_main, playViewModel)
            .addBindingParam(BR.vm, playViewModel)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.R)
+    override fun onClick() {
+        floatLayout.playClick {
+            PlayerManager.INSTANCE.controlPlay()
+        }
     }
 }
