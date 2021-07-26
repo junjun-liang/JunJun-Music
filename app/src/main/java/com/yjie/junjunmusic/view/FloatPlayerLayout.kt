@@ -68,6 +68,7 @@ class FloatPlayerLayout : LinearLayout {
     override fun onInterceptTouchEvent(ev: MotionEvent): Boolean {
         when (ev.action) {
             MotionEvent.ACTION_DOWN->{
+                //距离控件顶部的值
                 moveY = ev.y
             }
             MotionEvent.ACTION_MOVE->{
@@ -89,6 +90,7 @@ class FloatPlayerLayout : LinearLayout {
                 //因为translationY不管处于ViewGroup什么位置，初始值都为0，所以要买个top
                 //最小值
                 val offsetMin = dip2px(context,100f)
+                //top view自身顶部到其父布局顶边的距离
                 if (offsetY <  - top + offsetMin) {
                     offsetY =  - top.toFloat() + offsetMin
                 }
@@ -187,6 +189,7 @@ class FloatPlayerLayout : LinearLayout {
      */
     private fun startAnim() {
         val animator = if (isOpen) {
+            //从contentWidth宽度到0 变化
             ValueAnimator.ofInt(contentWidth, 0)
         } else {
             ValueAnimator.ofInt(0, contentWidth)
